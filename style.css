@@ -539,3 +539,25 @@ body {
         text-align: center;
     }
 }
+
+@media (max-width:451px) {
+    .con h2 {
+        font-size: 23px;
+    }
+
+    .con {
+        margin-top: 50px;
+    }
+
+    .con p {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .btn {
+        padding: 5px 10px;
+    }
+
+
+}
+}
