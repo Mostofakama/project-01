@@ -9,6 +9,8 @@ body {
     justify-content: center;
 }
 
+
+
 .menu {
     display: flex;
     list-style: none;
@@ -62,9 +64,21 @@ body {
 
 .menu-area {
     width: 60%;
+}
+
+
+.icon {
+    display: none;
+    margin-left: 15px;
+    border-radius: 5px;
 
 }
 
+.icon a i {
+    color: #070707;
+    font-size: 25px;
+
+}
 
 .item1 {
     grid-area: header;
@@ -300,5 +314,228 @@ body {
     75% {
         background: red top: 100%;
         left: 75%;
+    }
+}
+
+/* gallay style */
+.gallery-area {
+    grid-area: mane;
+}
+
+.gallery2-area {
+    grid-area: top;
+}
+
+.gallery3-area {
+    grid-area: bottom;
+}
+
+.section-men {
+    padding: 10px 20px;
+    display: grid;
+    grid-template-areas:
+        'mane mane  top top bottom bottom';
+    grid-gap: 40px;
+    margin-top: 60px;
+}
+
+
+.images {
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.images img {
+    width: 100%;
+    transition: ease-in-out 1s;
+}
+
+.images img:hover {
+    transform: scale(1.4);
+}
+
+.contaent5-area {
+    padding: 5px;
+}
+
+.contaent5-area span {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contaent5-area span a {
+    color: #000;
+    text-decoration: none;
+}
+
+.contaent5-area span h2 {
+    color: #000;
+    margin: 0;
+}
+
+.contaent5-area p {
+    padding: 5px;
+    color: #9c9c9c;
+    font-size: 23px;
+}
+
+/* footer area style */
+.footer-area {
+    margin-top: 150px;
+    background-color: #2a2a2a;
+}
+
+.contact-area {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box-area p {
+    color: #fff;
+    font-size: 15px;
+    margin: 0px;
+}
+
+.box-area h3 {
+    color: #fff;
+    font-size: 25px;
+    margin: 0px;
+}
+
+.box-area {
+    margin: 90px 0px;
+}
+
+.box-area a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.last-area {
+    display: flex;
+    justify-content: center;
+}
+
+.contact {
+    width: 90%;
+    text-align: center;
+}
+
+.contact p {
+    color: #fff;
+    font-size: 20px;
+}
+
+.contact a {
+    color: #fff;
+    font-size: 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-bottom: 40px;
+
+}
+
+.contact a i {
+
+    padding: 19px;
+    border-radius: 25px;
+
+}
+
+
+
+/* responsive website */
+@media (max-width:930px) {
+    .list {
+        display: none;
+    }
+
+    .icon {
+        display: block;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            'header header  header header'
+            'menu menu main main'
+            'right right footer footer';
+
+        gap: 10px;
+        background-color: #fff;
+        padding: 10px;
+    }
+
+    .btn {
+        padding: 7px 10px;
+    }
+
+    .section-men {
+        padding: 10px 20px;
+        display: grid;
+        grid-template-areas:
+            'mane mane  mane mane mane mane'
+            'top top  top top top top'
+            'bottom bottom  bottom bottom bottom bottom'
+        ;
+        grid-gap: 40px;
+
+    }
+
+    .gallery-area {
+        margin-top: 80px;
+    }
+
+    .gallery2-area {
+        margin-top: 80px;
+    }
+
+    .gallery3-area {
+        margin-top: 80px;
+    }
+
+    .contaent5-area p {
+        margin: 0;
+    }
+}
+
+@media (max-width:530px) {
+    .list {
+        display: none;
+    }
+
+    .icon {
+        display: block;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            'header header  header header'
+            'menu menu menu menu'
+            'main main main main'
+            'right right right right'
+            'footer footer footer footer';
+
+
+        gap: 10px;
+        background-color: #fff;
+        padding: 10px;
+    }
+
+    .btn {
+        padding: 7px 10px;
+    }
+
+    .contact-area {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .box-area {
+        margin: 0;
+        text-align: center;
     }
 }
